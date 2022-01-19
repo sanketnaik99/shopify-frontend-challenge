@@ -29,7 +29,7 @@ const Footer = () => {
             className="ml-3 text-gray-500  dark:text-gray-200 color-transition"
             href="https://twitter.com/sanketnaik99"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
             aria-label="Twitter"
           >
             <span className="hidden">Twitter</span>
@@ -48,7 +48,7 @@ const Footer = () => {
             className="ml-3 text-gray-500  dark:text-gray-200 color-transition"
             href="https://instagram.com/sanketnaik99"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
             aria-label="Instagram"
           >
             <span className="hidden">Instagram</span>
@@ -69,7 +69,7 @@ const Footer = () => {
             className="ml-3 text-gray-500  dark:text-gray-200 color-transition"
             href="https://www.linkedin.com/in/sanketnaik99/"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
             aria-label="Linked In"
           >
             <span className="hidden">Linked In</span>
