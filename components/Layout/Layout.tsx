@@ -34,9 +34,7 @@ const Layout: React.FC = ({ children }) => {
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <link rel="manifest" href="/manifest.json" />
-        {/* //TODO: Update This */}
-        {/* <link
+        <link
           href="/icons/favicon-16x16.png"
           rel="icon"
           type="image/png"
@@ -48,8 +46,8 @@ const Layout: React.FC = ({ children }) => {
           type="image/png"
           sizes="32x32"
         />
-        <link rel="apple-touch-icon" href="/icons/icon-152x152.png"></link> */}
-        <meta name="theme-color" content="#111827" />
+        <link rel="apple-touch-icon" href="/icons/icon-152x152.png"></link>
+        <meta name="theme-color" content="#f97316" />
       </Head>
       <div
         className={[
