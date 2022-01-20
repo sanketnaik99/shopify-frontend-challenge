@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 interface Props {
   handleThemeToggle: () => void;
@@ -8,10 +9,11 @@ interface Props {
 }
 
 const Navbar: React.FC<Props> = ({ handleThemeToggle, hasDarkModeEnabled }) => {
+  const router = useRouter();
+  const currentRoute = router.asPath;
   return (
     <nav className="py-2 px-4 md:px-8 w-full bg-white dark:bg-gray-900 transition-colors duration-500 ease-out">
       <div className="flex justify-between items-center">
-        {/* //TODO: UPDATE THIS */}
         <Link href="/">
           <a>
             <Image
@@ -23,6 +25,30 @@ const Navbar: React.FC<Props> = ({ handleThemeToggle, hasDarkModeEnabled }) => {
           </a>
         </Link>
         <div className="flex flex-row">
+          <Link href="/">
+            <button
+              className={[
+                "desktop-nav-button",
+                currentRoute === "/"
+                  ? "desktop-nav-button-active"
+                  : "desktop-nav-button-inactive",
+              ].join(" ")}
+            >
+              Home
+            </button>
+          </Link>
+          <Link href="/likes">
+            <button
+              className={[
+                "desktop-nav-button mr-4",
+                currentRoute === "/likes"
+                  ? "desktop-nav-button-active"
+                  : "desktop-nav-button-inactive",
+              ].join(" ")}
+            >
+              Likes
+            </button>
+          </Link>
           <div
             className="p-2 bg-gray-200 dark:bg-gray-600 transition-colors duration-500 ease-out rounded-full cursor-pointer text-center text-gray-800 dark:text-white font-bold"
             onClick={handleThemeToggle}

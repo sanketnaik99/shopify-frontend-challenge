@@ -91,20 +91,6 @@ const Footer = () => {
           </a>
         </span>
       </div>
-      {/* // TODO: REMOVE THIS */}
-      <div className="container mx-auto p-4 flex flex-col items-center mb-2">
-        <Image
-          src="/assets/tmdb-logo.png"
-          height={12}
-          width={92}
-          className=""
-          alt="TMDB Logo"
-        />
-        <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
-          This website uses the TMDb API but is not endorsed or certified by
-          TMDb.
-        </p>
-      </div>
     </footer>
   );
 };

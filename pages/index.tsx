@@ -37,8 +37,9 @@ const Home: NextPage = () => {
 
   const getLocalStorage = async () => {
     const rawDates = await localStorage.getItem("likedImages");
-    const likedImages = rawDates.split(",");
+    const likedImages = rawDates?.split(",") ?? [];
     console.log(likedImages);
+    setLikedImages(likedImages);
   };
 
   const likeImage = async (imageDate: string) => {
