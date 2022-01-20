@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .desktop-nav-button {
-  @apply md:w-24 lg:w-32 hidden md:block  border-0 py-2 md:px-4 lg:px-8 ml-2 focus:outline-none  rounded text-lg font-semibold;
+  @apply md:w-24 lg:w-32 md:block  border-0 py-2 px-2 md:px-4 lg:px-8 ml-2 focus:outline-none  rounded text-base md:text-lg font-semibold;
 }
 .desktop-nav-button-active {
   @apply text-black bg-gray-200 dark:bg-gray-500 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-500;

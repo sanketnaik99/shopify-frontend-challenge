@@ -40,7 +40,7 @@ const Navbar: React.FC<Props> = ({ handleThemeToggle, hasDarkModeEnabled }) => {
           <Link href="/likes">
             <button
               className={[
-                "desktop-nav-button mr-4",
+                "desktop-nav-button mr-2 md:mr-4",
                 currentRoute === "/likes"
                   ? "desktop-nav-button-active"
                   : "desktop-nav-button-inactive",
