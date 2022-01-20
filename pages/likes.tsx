@@ -122,7 +122,7 @@ const Likes: NextPage = () => {
                     <h4 className="text-xl font-bold text-gray-600">
                       {image.copyright}
                     </h4>
-                    <p className="text-base font-semibold text-gray-300 mb-4">
+                    <p className="text-base font-semibold text-gray-800 dark:text-gray-300 mb-4">
                       {image.explanation}
                     </p>
                   </div>
