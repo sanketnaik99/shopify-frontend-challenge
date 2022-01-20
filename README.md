@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# StarGazer
+
+This website was developed as a part of the Shopify Front End Developer Intern Challenge - Summer 2022.
+A live demo of the website is available on [https://stargazer.sanketnaik.dev](https://stargazer.sanketnaik.dev).
+This website was developed using the following technologies -
+
+- **Next.js**
+- **TypeScript**
+- **TailwindCSS**
 
 ## Getting Started
 
-First, run the development server:
+To run the application, make sure you have installed Node.js. This website was
+developed using `Node v16.9.1`.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Steps for Running the website
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repository.
+2. Install the dependencies using the following command -
+   ```bash
+   yarn install
+   # or
+   npm install
+   ```
+3. Run the server using the following command -
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+4. Once the server has started, the website should be available on `http://localhost:3000`.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Features
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+The website has various features as follows -
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### 1. Like / Unlike Images
 
-## Learn More
+You can click on the like button on the bottom right side of an image to like the image.
+Your likes are stored in the local storage of your browser and you can view your liked
+images anytime by visiting the likes page from the top navbar.
+Moreover, your liked images can be accessed even if you leave the page and come back later.
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Loading State
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The website displays a loading screen while your Image of the Day and Liked Images are loaded from
+Nasa's API. Have a slow internet connection? Sit back and enjoy watching the Astronaut float in space while your content loads.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 3. Dark Mode
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This website features a dark mode which can be toggled easily by clicking on the theme toggle button
+in the top-right corner of the navbar. Your theme choice is stored in the browser so
+the next time you open the page, the same theme is selected by default.
